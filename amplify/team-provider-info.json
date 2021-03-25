@@ -1,0 +1,14 @@
+{
+  "dev": {
+    "awscloudformation": {
+      "AuthRoleName": "amplify-aceteraudio-dev-95447-authRole",
+      "UnauthRoleArn": "arn:aws:iam::200145197882:role/amplify-aceteraudio-dev-95447-unauthRole",
+      "AuthRoleArn": "arn:aws:iam::200145197882:role/amplify-aceteraudio-dev-95447-authRole",
+      "Region": "eu-north-1",
+      "DeploymentBucketName": "amplify-aceteraudio-dev-95447-deployment",
+      "UnauthRoleName": "amplify-aceteraudio-dev-95447-unauthRole",
+      "StackName": "amplify-aceteraudio-dev-95447",
+      "StackId": "arn:aws:cloudformation:eu-north-1:200145197882:stack/amplify-aceteraudio-dev-95447/34d47320-8c76-11eb-94b9-0eab76d49478"
+    }
+  }
+}

@@ -1,0 +1,49 @@
+type Track @model {
+  id: ID!
+  name: String!
+  settings: TrackSettings
+  drumBanks: [DrumBank] @connection(keyName: "withTrack", fields: ["id"])
+  currentDrumBank: ID
+  sequencer: Matrix
+}
+
+type TrackSettings {
+  bpm: Int!
+  volume: Int!
+}
+
+type DrumBank @model @key(name: "withTrack", fields: ["trackID"]) {
+  id: ID!
+  trackID: ID!
+  name: String
+  drums: [Drum] @connection(keyName: "withDrumBank", fields: ["id"])
+}
+
+type Drum @model @key(name: "withDrumBank", fields: ["drumBankID"]) {
+  id: ID!
+  drumBankID: ID!
+  name: String
+  type: DrumType!
+  source: String
+}
+
+enum DrumType {
+  oscillator
+  sample
+}
+
+type Matrix {
+  kick: [Boolean]
+  sub: [Boolean]
+  snare: [Boolean]
+  clap: [Boolean]
+  hiHat: [Boolean]
+  openHiHat: [Boolean]
+}
+
+type Subscription {
+  onUpdateTrackID(id: ID!): Track
+    @aws_subscribe(mutations: ["updateTrack"])
+}
+
+

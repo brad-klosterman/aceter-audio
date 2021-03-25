@@ -1,0 +1,18 @@
+projects:
+  aceteraudio:
+    schemaPath: amplify/backend/api/aceteraudio/build/schema.graphql
+    includes:
+      - src/api/graphql/**/*.ts
+    excludes:
+      - ./amplify/**
+    extensions:
+      amplify:
+        codeGenTarget: typescript
+        generatedFileName: src/api/API.ts
+        docsFilePath: src/api/graphql
+        region: eu-north-1
+        apiId: null
+        maxDepth: 2
+extensions:
+  amplify:
+    version: 3
