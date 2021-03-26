@@ -6,9 +6,10 @@
     "framework": "react",
     "config": {
       "SourceDir": "src",
-      "DistributionDir": "build",
+      "DistributionDir": "dist",
       "BuildCommand": "npm run-script build",
-      "StartCommand": "npm run-script start"
+      "StartCommand": "npm run-script start",
+      "ServerlessContainers": true
     }
   },
   "providers": [

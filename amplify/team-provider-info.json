@@ -1,14 +1,23 @@
 {
-  "dev": {
-    "awscloudformation": {
-      "AuthRoleName": "amplify-aceteraudio-dev-95447-authRole",
-      "UnauthRoleArn": "arn:aws:iam::200145197882:role/amplify-aceteraudio-dev-95447-unauthRole",
-      "AuthRoleArn": "arn:aws:iam::200145197882:role/amplify-aceteraudio-dev-95447-authRole",
-      "Region": "eu-north-1",
-      "DeploymentBucketName": "amplify-aceteraudio-dev-95447-deployment",
-      "UnauthRoleName": "amplify-aceteraudio-dev-95447-unauthRole",
-      "StackName": "amplify-aceteraudio-dev-95447",
-      "StackId": "arn:aws:cloudformation:eu-north-1:200145197882:stack/amplify-aceteraudio-dev-95447/34d47320-8c76-11eb-94b9-0eab76d49478"
+    "dev": {
+        "awscloudformation": {
+            "AuthRoleName": "amplify-aceteraudio-dev-83141-authRole",
+            "UnauthRoleArn": "arn:aws:iam::200145197882:role/amplify-aceteraudio-dev-83141-unauthRole",
+            "AuthRoleArn": "arn:aws:iam::200145197882:role/amplify-aceteraudio-dev-83141-authRole",
+            "Region": "eu-west-1",
+            "DeploymentBucketName": "amplify-aceteraudio-dev-83141-deployment",
+            "UnauthRoleName": "amplify-aceteraudio-dev-83141-unauthRole",
+            "StackName": "amplify-aceteraudio-dev-83141",
+            "StackId": "arn:aws:cloudformation:eu-west-1:200145197882:stack/amplify-aceteraudio-dev-83141/f2606250-8dfc-11eb-9419-0a258046add5",
+            "AmplifyAppId": "dbnicy4b71dfk"
+        },
+        "categories": {
+            "hosting": {
+                "amplifyhosting": {
+                    "appId": "dbnicy4b71dfk",
+                    "type": "cicd"
+                }
+            }
+        }
     }
-  }
 }

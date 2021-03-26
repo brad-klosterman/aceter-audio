@@ -8,13 +8,20 @@
           "defaultAuthentication": {
             "authenticationType": "API_KEY",
             "apiKeyConfig": {
-              "apiKeyExpirationDays": 360,
-              "description": "aceter-api-key"
+              "apiKeyExpirationDays": 365,
+              "description": "aceter-audio"
             }
           },
           "additionalAuthenticationProviders": []
         }
       }
+    }
+  },
+  "hosting": {
+    "amplifyhosting": {
+      "service": "amplifyhosting",
+      "type": "cicd",
+      "lastPushTimeStamp": "2021-03-26T06:52:40.189Z"
     }
   }
 }
